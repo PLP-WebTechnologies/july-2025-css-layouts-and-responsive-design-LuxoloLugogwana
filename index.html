@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div>
+  <h1>The Lion head</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h2>King of the Jungle</h2>
+    <p>And the lion is ruled out to be the king amongst all the animals in the jungle.</p>
+    <img class="img-content" src="lion.jpg" alt="The King of the jungle" >
+  </div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>The life of animals in the animal kingdom, where the is only one king of the jungle.</p>
+  </div>
+</div>
+
+<footer class="footer">
+    <div >© copyright Luxolo LTD</div>
+</footer>
+
+
+</body>
+</html>
